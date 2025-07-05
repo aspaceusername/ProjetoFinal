@@ -1,0 +1,4 @@
+Invoking command in '/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto -- -j16 -l16
+Invoked command in '/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto -- -j16 -l16
+Invoking command in '/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto
+Invoked command in '/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto
