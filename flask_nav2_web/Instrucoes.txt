@@ -1,0 +1,37 @@
+1. Onde tens um ficheiro .yaml com o nome "FALTA_AQUI_YAML_DO_MAPA,yaml"
+tens de trocar pelo o yaml gerado ontem a noite de acordo com este novo pgm
+
+2. ros2 pkg create nav_goal_sender --build-type ament_python (nao sei se tens de fazer este package)
+
+(1. ros2 pkg create nav_goal_sender --build-type ament_python
+
+
+Este comando cria um pacote ROS 2 novo chamado nav_goal_sender configurado para ser construído com o sistema ament_python.
+
+Ou seja, é um pacote ROS 2 em Python.
+
+Vai criar a estrutura de diretórios e ficheiros básica para o teu pacote.
+
+2. Registo no setup.py — entry_points
+No ROS 2 com ament_python, o ficheiro setup.py (que é o script padrão para pacotes Python) tem uma secção chamada entry_points.
+Essa secção diz ao sistema de build e ao ROS 2 quais são os executáveis "scripts" do teu pacote e onde eles estão no código.
+
+O que é o entry_points?
+
+
+entry_points={
+    'console_scripts': [
+        'send_goal.py = nav_goal_sender.send_goal:main',
+    ],
+},
+
+
+console_scripts é um grupo especial usado para criar comandos que podes executar na linha de comandos (terminal).
+
+Aqui estás a dizer:
+
+Quando executares ros2 run nav_goal_sender send_goal.py
+
+O ROS vai chamar a função main() dentro do ficheiro nav_goal_sender/send_goal.py.
+
+)
