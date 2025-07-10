@@ -1,4 +1,0 @@
-Invoking command in '/home/ruben/articubot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/articubot_ws/build/articubot_one -- -j16 -l16
-Invoked command in '/home/ruben/articubot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/articubot_ws/build/articubot_one -- -j16 -l16
-Invoking command in '/home/ruben/articubot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/articubot_ws/build/articubot_one
-Invoked command in '/home/ruben/articubot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/articubot_ws/build/articubot_one

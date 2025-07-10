@@ -1,1 +1,0 @@
-/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/launch/ros_ign_bridge.launch.py

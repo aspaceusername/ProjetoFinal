@@ -1,1 +1,0 @@
-/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/launch/navigation2.launch.py

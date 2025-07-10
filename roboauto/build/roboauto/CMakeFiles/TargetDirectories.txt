@@ -1,9 +1,0 @@
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/uninstall.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/roboauto_uninstall.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/test.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/edit_cache.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/rebuild_cache.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/list_install_components.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/install.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/install/local.dir
-/home/ruben/Documents/ProjetoFinal/roboauto/build/roboauto/CMakeFiles/install/strip.dir

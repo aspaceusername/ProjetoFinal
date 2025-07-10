@@ -1,1 +1,0 @@
-/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/params/test_nav2_planners.py
