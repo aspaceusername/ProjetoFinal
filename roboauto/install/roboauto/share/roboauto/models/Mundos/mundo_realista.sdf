@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Modelo com o mundo em formato DAE -->
+    <model name="mundo_realista">
+      <static>true</static>
+      <link name="mundo_realista_link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/ruben/Documents/ProjetoFinal/roboauto/maps/Mundos/mundo_realista.dae</uri>
+            </mesh>
+          </geometry>
+        </visual>
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/ruben/Documents/ProjetoFinal/roboauto/maps/Mundos/mundo_realista.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+  </world>
+</sdf>

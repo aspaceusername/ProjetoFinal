@@ -39,7 +39,7 @@ def generate_launch_description():
             '-allow_renaming', 'false',
             '-x', '-2.0',
             '-y', '-0.5',
-            '-z', '0.01'
+            '-z', '1.0'
         ],
     )
 
@@ -51,13 +51,13 @@ def generate_launch_description():
         arguments=[
             '-file', PathJoinSubstitution([
                 get_package_share_directory('roboauto'),
-                "models", "worlds", "model.sdf"
+                "models", "mundo_realista", "model.sdf"
             ]),
             '-allow_renaming', 'false'
         ],
     )
 
-    world_only = os.path.join(get_package_share_directory('roboauto'), "models", "mundos", "mundo_realista.sdf")
+    world_only = os.path.join(get_package_share_directory('roboauto'), "models", "worlds", "world_only.sdf")
 
     return LaunchDescription([
         ign_resource_path,

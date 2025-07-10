@@ -1,0 +1,40 @@
+[1.092s] Invoking command in '/home/ruben/flask_nav2_web/nav_goal_sender': PYTHONPATH=/home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/nav_goal_sender build --build-base /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build install --record /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/install.log --single-version-externally-managed install_data
+[1.462s] running egg_info
+[1.463s] creating build/nav_goal_sender/nav_goal_sender.egg-info
+[1.464s] writing build/nav_goal_sender/nav_goal_sender.egg-info/PKG-INFO
+[1.464s] writing dependency_links to build/nav_goal_sender/nav_goal_sender.egg-info/dependency_links.txt
+[1.464s] writing entry points to build/nav_goal_sender/nav_goal_sender.egg-info/entry_points.txt
+[1.464s] writing requirements to build/nav_goal_sender/nav_goal_sender.egg-info/requires.txt
+[1.464s] writing top-level names to build/nav_goal_sender/nav_goal_sender.egg-info/top_level.txt
+[1.465s] writing manifest file 'build/nav_goal_sender/nav_goal_sender.egg-info/SOURCES.txt'
+[1.467s] reading manifest file 'build/nav_goal_sender/nav_goal_sender.egg-info/SOURCES.txt'
+[1.468s] writing manifest file 'build/nav_goal_sender/nav_goal_sender.egg-info/SOURCES.txt'
+[1.468s] running build
+[1.468s] running build_py
+[1.468s] creating /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build
+[1.469s] creating /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib
+[1.469s] creating /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib/nav_goal_sender
+[1.469s] copying nav_goal_sender/goal_state_listener.py -> /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib/nav_goal_sender
+[1.469s] copying nav_goal_sender/send_goal.py -> /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib/nav_goal_sender
+[1.469s] copying nav_goal_sender/__init__.py -> /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib/nav_goal_sender
+[1.469s] running install
+[1.470s] running install_lib
+[1.471s] creating /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender
+[1.471s] copying /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib/nav_goal_sender/goal_state_listener.py -> /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender
+[1.471s] copying /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib/nav_goal_sender/send_goal.py -> /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender
+[1.471s] copying /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build/lib/nav_goal_sender/__init__.py -> /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender
+[1.472s] byte-compiling /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender/goal_state_listener.py to goal_state_listener.cpython-310.pyc
+[1.473s] byte-compiling /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender/send_goal.py to send_goal.cpython-310.pyc
+[1.473s] byte-compiling /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender/__init__.py to __init__.cpython-310.pyc
+[1.473s] running install_data
+[1.473s] creating /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/share/ament_index
+[1.473s] creating /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/share/ament_index/resource_index
+[1.474s] creating /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/share/ament_index/resource_index/packages
+[1.474s] copying resource/nav_goal_sender -> /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/share/ament_index/resource_index/packages
+[1.474s] copying package.xml -> /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/share/nav_goal_sender
+[1.474s] running install_egg_info
+[1.476s] Copying build/nav_goal_sender/nav_goal_sender.egg-info to /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender-0.0.0-py3.10.egg-info
+[1.477s] running install_scripts
+[1.509s] Installing send_goal.py script to /home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/nav_goal_sender
+[1.510s] writing list of installed files to '/home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/install.log'
+[1.574s] Invoked command in '/home/ruben/flask_nav2_web/nav_goal_sender' returned '0': PYTHONPATH=/home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ruben/flask_nav2_web/nav_goal_sender/install/nav_goal_sender/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/nav_goal_sender build --build-base /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/build install --record /home/ruben/flask_nav2_web/nav_goal_sender/build/nav_goal_sender/install.log --single-version-externally-managed install_data

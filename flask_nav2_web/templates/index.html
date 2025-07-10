@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Enviar Objetivo</title>
   <style>
@@ -12,10 +13,12 @@
       display: flex;
       flex-direction: column;
     }
+
     h1 {
       text-align: center;
       margin-bottom: 5px;
     }
+
     hr {
       border: none;
       height: 1.5px;
@@ -24,14 +27,15 @@
       margin: 0 auto 30px auto;
       opacity: 0.7;
     }
+
     .container {
       display: flex;
       align-items: flex-start;
       gap: 20px;
-      /* Alinha à esquerda */
       justify-content: flex-start;
       flex-grow: 1;
     }
+
     #mapa {
       width: 800px;
       cursor: pointer;
@@ -39,16 +43,19 @@
       border-radius: 8px;
       user-select: none;
     }
+
     .coords {
       display: flex;
       flex-direction: column;
       gap: 10px;
       min-width: 180px;
     }
+
     label {
       font-weight: bold;
       margin-bottom: 5px;
     }
+
     input[type="text"] {
       background-color: #222;
       border: 1px solid #555;
@@ -59,6 +66,7 @@
       width: 100%;
       box-sizing: border-box;
     }
+
     footer {
       text-align: center;
       padding: 12px 0;
@@ -70,6 +78,7 @@
     }
   </style>
 </head>
+
 <body>
   <h1>Clica no mapa para escolher o objetivo</h1>
   <hr>
@@ -100,15 +109,25 @@
 
     img.addEventListener('click', async (e) => {
       const rect = img.getBoundingClientRect();
+
+      // Click coordinates relative to displayed image
       const x_img = e.clientX - rect.left;
       const y_img = e.clientY - rect.top;
 
-      const resolution = 0.05;
-      const origin_x = -10.0;
-      const origin_y = -10.0;
+      // Center of displayed image
+      const center_x = img.width / 2;
+      const center_y = img.height / 2;
 
-      const real_x = x_img * resolution + origin_x;
-      const real_y = (img.naturalHeight - y_img) * resolution + origin_y;
+      // Map resolution (meters per pixel)
+      const resolution = 0.05;
+
+      // Calculate offset from center
+      const dx = x_img - center_x;
+      const dy = center_y - y_img; // Y-axis flipped
+
+      // Convert to meters
+      const real_x = dx * resolution;
+      const real_y = dy * resolution;
 
       coordXInput.value = real_x.toFixed(3);
       coordYInput.value = real_y.toFixed(3);
@@ -124,4 +143,5 @@
     });
   </script>
 </body>
+
 </html>

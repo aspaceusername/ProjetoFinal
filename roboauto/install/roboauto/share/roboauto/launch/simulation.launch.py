@@ -51,7 +51,7 @@ def generate_launch_description():
         arguments=[
             '-file', PathJoinSubstitution([
                 get_package_share_directory('roboauto'),
-                "models", "worlds", "model.sdf"
+                "models", "mundo_realista", "model.sdf"
             ]),
             '-allow_renaming', 'false'
         ],

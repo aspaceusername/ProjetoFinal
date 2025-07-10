@@ -6,7 +6,7 @@ amcl:
     alpha3: 0.2
     alpha4: 0.2
     alpha5: 0.2
-    base_frame_id: "base_link"  # Ajuste para o frame base do seu robô
+    base_frame_id: "base_footprint"  # Ajuste para o frame base do seu robô
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
@@ -43,7 +43,7 @@ bt_navigator:
   ros__parameters:
     use_sim_time: True
     global_frame: map
-    robot_base_frame: base_link  # Alinhar ao frame base do robô
+    robot_base_frame: base_footprint  # Alinhar ao frame base do robô
     odom_topic: /odom
     bt_loop_duration: 10
     default_server_timeout: 20
@@ -173,7 +173,7 @@ local_costmap:
       update_frequency: 5.0
       publish_frequency: 2.0
       global_frame: odom
-      robot_base_frame: base_link
+      robot_base_frame: base_footprint
       use_sim_time: True
       rolling_window: true
       width: 3
@@ -216,7 +216,7 @@ global_costmap:
       update_frequency: 1.0
       publish_frequency: 1.0
       global_frame: map
-      robot_base_frame: base_link
+      robot_base_frame: base_footprint
       use_sim_time: True
       robot_radius: 0.20  # Ajustar ao raio do seu robô
       resolution: 0.05
@@ -248,7 +248,10 @@ global_costmap:
 map_server:
   ros__parameters:
     use_sim_time: True
-    yaml_filename: "/home/ruben/Documents/ProjetoFinal/roboauto/maps/turtlebot3_world.yaml"
+    # É realizato um overwrite na launch file utilizada
+    # Se se pretender definir o mapa a utilizar, deve-se remover o valor default "map" do
+    # ficheiro simulation_launch.py e fornecer o caminho completo do mapa abaixo.
+    yaml_filename: ""
 
 map_saver:
   ros__parameters:

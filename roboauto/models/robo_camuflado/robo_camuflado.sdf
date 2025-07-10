@@ -2,10 +2,29 @@
 <sdf version="1.7">
   <model name="robo_camuflado">
     <!-- Base Links -->
-    <link name="base_footprint"/>
+    <link name="base_footprint">
+    
+      <inertial>
+        <mass>0.001</mass>
+        <inertia>
+          <ixx>1e-6</ixx><iyy>1e-6</iyy><izz>1e-6</izz>
+          <ixy>0</ixy><ixz>0</ixz><iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>0.01 0.01 0.01</size>
+          </box>
+        </geometry>
+      </collision>
+    </link>
+
 
     <link name="base_link">
+      
       <visual name="base_visual">
+        <pose>-0.064 0 0 0 0 0</pose>
         <geometry>
           <mesh>
             <uri>file:///home/ruben/Documents/ProjetoFinal/roboauto/models/robo_camuflado/meshes/base_link.dae</uri>
@@ -14,9 +33,10 @@
         </geometry>
       </visual>
       <collision name="base_collision">
+        <pose>-0.064 0 0.048 0 0 0</pose>
         <geometry>
           <box>
-            <size>0.5 0.3 0.2</size>
+            <size>0.6 0.4 0.1</size> 
           </box>
         </geometry>
       </collision>
@@ -32,7 +52,11 @@
         </inertia>
       </inertial>
     </link>
-
+    <joint name="base_joint" type="fixed">
+      <pose>0 0 0.01 0 0 0</pose>
+      <parent>base_footprint</parent>
+      <child>base_link</child>
+    </joint>
     <!-- IMU -->
     <link name="imu_link">
       <sensor name="imu" type="imu">
@@ -43,44 +67,14 @@
         <ignition_frame_id>imu_link</ignition_frame_id>
         <imu>
           <angular_velocity>
-            <x>
-              <noise type="gaussian">
-                <mean>0.0</mean>
-                <stddev>2e-4</stddev>
-              </noise>
-            </x>
-            <y>
-              <noise type="gaussian">
-                <mean>0.0</mean>
-                <stddev>2e-4</stddev>
-              </noise>
-            </y>
-            <z>
-              <noise type="gaussian">
-                <mean>0.0</mean>
-                <stddev>2e-4</stddev>
-              </noise>
-            </z>
+            <x><noise type="gaussian"><mean>0.0</mean><stddev>2e-4</stddev></noise></x>
+            <y><noise type="gaussian"><mean>0.0</mean><stddev>2e-4</stddev></noise></y>
+            <z><noise type="gaussian"><mean>0.0</mean><stddev>2e-4</stddev></noise></z>
           </angular_velocity>
           <linear_acceleration>
-            <x>
-              <noise type="gaussian">
-                <mean>0.0</mean>
-                <stddev>1.7e-2</stddev>
-              </noise>
-            </x>
-            <y>
-              <noise type="gaussian">
-                <mean>0.0</mean>
-                <stddev>1.7e-2</stddev>
-              </noise>
-            </y>
-            <z>
-              <noise type="gaussian">
-                <mean>0.0</mean>
-                <stddev>1.7e-2</stddev>
-              </noise>
-            </z>
+            <x><noise type="gaussian"><mean>0.0</mean><stddev>1.7e-2</stddev></noise></x>
+            <y><noise type="gaussian"><mean>0.0</mean><stddev>1.7e-2</stddev></noise></y>
+            <z><noise type="gaussian"><mean>0.0</mean><stddev>1.7e-2</stddev></noise></z>
           </linear_acceleration>
         </imu>
       </sensor>
@@ -90,31 +84,37 @@
       <parent>base_link</parent>
       <child>imu_link</child>
     </joint>
+
     <!-- CAMARA -->
     <link name="camera_link"/>
+      <visual name="camera_visual">
+        <geometry>
+          <box>
+            <size>0.05 0.05 0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0 1 0 1</ambient> <!-- green -->
+          <diffuse>0 1 0 1</diffuse>
+        </material>
+      </visual>
     <joint name="camera_joint" type="fixed">
       <parent>base_link</parent>
       <child>camera_link</child>
-      <pose>0.064 -0.065 0.094 0 0 0</pose>
-      <axis>
-        <xyz>0 0 1</xyz>
-      </axis>
+      <pose>0 0 0 0 0 0</pose>
+      <axis><xyz>0 0 1</xyz></axis>
     </joint>
 
     <link name="camera_rgb_frame">
       <inertial>
-        <pose>0.069 -0.047 0.107 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <inertia>
-          <ixx>0.001</ixx>
-          <ixy>0.000</ixy>
-          <ixz>0.000</ixz>
-          <iyy>0.001</iyy>
-          <iyz>0.000</iyz>
-          <izz>0.001</izz>
+          <ixx>0.001</ixx><ixy>0.000</ixy><ixz>0.000</ixz>
+          <iyy>0.001</iyy><iyz>0.000</iyz><izz>0.001</izz>
         </inertia>
         <mass>0.035</mass>
       </inertial>
-      <pose>0.069 -0.047 0.107 0 0 0</pose>
+      <pose>0 0 0 0 0 0</pose>
       <sensor name="camera" type="camera">
         <always_on>true</always_on>
         <visualize>true</visualize>
@@ -124,74 +124,48 @@
         <ignition_frame_id>camera_rgb_frame</ignition_frame_id>
         <camera name="intel_realsense_r200">
           <horizontal_fov>1.02974</horizontal_fov>
-          <image>
-            <width>1920</width>
-            <height>1080</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.02</near>
-            <far>300</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <!-- Noise is sampled independently per pixel on each frame.
-                  That pixel's noise value is added to each of its color
-                  channels, which at that point lie in the range [0,1]. -->
-            <mean>0.0</mean>
-            <stddev>0.007</stddev>
-          </noise>
+          <image><width>1920</width><height>1080</height><format>R8G8B8</format></image>
+          <clip><near>0.02</near><far>300</far></clip>
+          <noise><type>gaussian</type><mean>0.0</mean><stddev>0.007</stddev></noise>
         </camera>
       </sensor>
     </link>
     <joint name="camera_rgb_joint" type="fixed">
       <parent>camera_link</parent>
       <child>camera_rgb_frame</child>
-      <pose>0.005 0.018 0.013 0 0 0</pose>
-      <axis>
-        <xyz>0 0 1</xyz>
-      </axis>
+      <pose>0.1 0 0.35 0 0 0</pose> <!-- Modificado: à frente do LIDAR -->
+      <axis><xyz>0 0 1</xyz></axis>
     </joint>
 
     <!-- LIDAR -->
     <link name="base_scan">
       <inertial>
-        <pose>-0.052 0 0.111 0 0 0</pose>
-        <inertia>
-          <ixx>0.001</ixx>
-          <ixy>0</ixy>
-          <ixz>0</ixz>
-          <iyy>0.001</iyy>
-          <iyz>0</iyz>
-          <izz>0.001</izz>
-        </inertia>
+        <pose>0 0 0 0 0 0</pose>
+        <inertia><ixx>0.001</ixx><ixy>0</ixy><ixz>0</ixz><iyy>0.001</iyy><iyz>0</iyz><izz>0.001</izz></inertia>
         <mass>0.114</mass>
       </inertial>
       <collision name="lidar_sensor_collision">
-        <pose>-0.052 0 0.111 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
-          <cylinder>
-            <radius>0.0508</radius>
-            <length>0.055</length>
-          </cylinder>
+          <cylinder><radius>0.0508</radius><length>0.055</length></cylinder>
         </geometry>
       </collision>
       <visual name="lidar_sensor_visual">
-        <pose>-0.064 0 0.121 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh> 
             <uri>model://robo_camuflado/meshes/lidar_link.dae</uri>
-            <scale>0.001 0.001 0.001</scale>
+            <scale>1 1 1</scale>
           </mesh>
         </geometry>
         <material>
-          <diffuse> 0.145098039 0.156862745 0.164705882 1</diffuse>
-          <ambient> 0.145098039 0.156862745 0.164705882 1</ambient>
+          <diffuse>0.145098039 0.156862745 0.164705882 1</diffuse>
+          <ambient>0.145098039 0.156862745 0.164705882 1</ambient>
           <specular>0.145098039 0.156862745 0.164705882 1</specular>
         </material>
       </visual>
       <sensor name="gpu_lidar" type="gpu_lidar">
-        <pose>-0.064 0 0.121 0 0 0</pose>
+        <pose>0 0 0 0 0 0</pose>
         <topic>scan</topic>
         <ignition_frame_id>base_scan</ignition_frame_id>
         <update_rate>5</update_rate>
@@ -220,7 +194,7 @@
       </sensor>
     </link>
     <joint name="lidar_joint" type="fixed">
-      <pose>-0.064 0 0.121 0 0 0</pose>
+      <pose>0 0 0.3 0 0 0</pose> <!-- Modificado: LIDAR no topo do robô -->
       <parent>base_link</parent>
       <child>base_scan</child>
     </joint>
@@ -238,10 +212,18 @@
       <collision name="wheel_fl_collision">
         <geometry>
           <cylinder>
-            <radius>0.1</radius> <!-- Adjust to match your wheel size -->
-            <length>0.05</length>
+            <radius>0.3</radius> <!-- Adjust to match your wheel size -->
+            <length>0.1</length>
           </cylinder>
         </geometry>
+        <surface>
+  <friction>
+    <ode>
+      <mu>1.0</mu>
+      <mu2>1.0</mu2>
+    </ode>
+  </friction>
+</surface>
       </collision>
       <inertial>
         <mass>0.5</mass>
@@ -268,10 +250,18 @@
       <collision name="wheel_fr_collision">
         <geometry>
           <cylinder>
-            <radius>0.1</radius>
-            <length>0.05</length>
+            <radius>0.3</radius>
+            <length>0.1</length>
           </cylinder>
         </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
       </collision>
       <inertial>
         <mass>0.5</mass>
@@ -280,7 +270,7 @@
           <ixy>0</ixy>
           <ixz>0</ixz>
           <iyy>0.01</iyy>
-          <iyz>0</iyz>
+          <iyz>0</iyz>ujn
           <izz>0.005</izz>
         </inertia>
       </inertial>
@@ -299,10 +289,18 @@
       <collision name="wheel_bl_collision">
         <geometry>
           <cylinder>
-            <radius>0.1</radius>
-            <length>0.05</length>
+            <radius>0.3</radius>
+            <length>0.1</length>
           </cylinder>
         </geometry>
+        <surface>
+  <friction>
+    <ode>
+      <mu>1.0</mu>
+      <mu2>1.0</mu2>
+    </ode>
+  </friction>
+</surface>
       </collision>
       <inertial>
         <mass>0.5</mass>
@@ -330,10 +328,18 @@
       <collision name="wheel_br_collision">
         <geometry>
           <cylinder>
-            <radius>0.1</radius>
-            <length>0.05</length>
+            <radius>0.3</radius>
+            <length>0.1</length>
           </cylinder>
         </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
       </collision>
       <inertial>
         <mass>0.5</mass>
@@ -354,12 +360,11 @@
       <child>wheel_fl</child>
       <axis>
         <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
+        <dynamics>
+          <damping>0.5</damping>
+        </dynamics>
       </axis>
-      <pose>-0.15 0.15 -0.1 0 0 0</pose> <!-- Adjust position as needed -->
+      <pose>-0.15 0.15 0.3 0 0 0</pose> <!-- Adjust position as needed -->
     </joint>
 
     <joint name="wheel_fr_joint" type="revolute">
@@ -367,12 +372,11 @@
       <child>wheel_fr</child>
       <axis>
         <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
+        <dynamics>
+          <damping>0.5</damping>
+        </dynamics>
       </axis>
-      <pose>-0.15 -0.15 -0.1 0 0 0</pose>
+      <pose>-0.15 -0.15 0.3 0 0 0</pose>
     </joint>
 
     <joint name="wheel_bl_joint" type="revolute">
@@ -380,12 +384,11 @@
       <child>wheel_bl</child>
       <axis>
         <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
+        <dynamics>
+          <damping>0.5</damping>
+        </dynamics>
       </axis>
-      <pose>0.15 0.15 -0.1 0 0 0</pose>
+      <pose>0.15 0.15 0.3 0 0 0</pose>
     </joint>
 
     <joint name="wheel_br_joint" type="revolute">
@@ -393,12 +396,11 @@
       <child>wheel_br</child>
       <axis>
         <xyz>0 1 0</xyz>
-        <limit>
-          <lower>-1e+16</lower>
-          <upper>1e+16</upper>
-        </limit>
+        <dynamics>
+          <damping>0.5</damping>
+        </dynamics> 
       </axis>
-      <pose>0.15 -0.15 -0.1 0 0 0</pose>
+      <pose>0.15 -0.15 0.3 0 0 0</pose>
     </joint>
 
   <!-- Global odometer -->
@@ -408,7 +410,7 @@
       <odom_publish_frequency>50</odom_publish_frequency>
       <odom_topic>/odom</odom_topic>
       <odom_frame>odom</odom_frame>
-      <robot_base_frame>base_link</robot_base_frame>
+      <robot_base_frame>base_footprint</robot_base_frame>
       <tf_topic>/odom/tf</tf_topic>
     </plugin>
 
@@ -418,7 +420,7 @@
       <left_joint>wheel_fl_joint</left_joint>
       <right_joint>wheel_fr_joint</right_joint>
       <wheel_separation>0.287</wheel_separation>
-      <wheel_radius>0.1</wheel_radius> <!-- igual ao raio definido nas rodas -->
+      <wheel_radius>0.3</wheel_radius>
       <topic>cmd_vel</topic>
     </plugin>
 
