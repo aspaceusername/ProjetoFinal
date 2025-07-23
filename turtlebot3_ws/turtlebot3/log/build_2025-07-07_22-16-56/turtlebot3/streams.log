@@ -1,0 +1,63 @@
+[0.014s] Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3
+[0.031s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.179s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.214s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.324s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.324s] -- Configured cppcheck include dirs: 
+[0.324s] -- Configured cppcheck exclude dirs and/or files: 
+[0.327s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.333s] -- Added test 'lint_cmake' to check CMake code style
+[0.336s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.358s] -- Added test 'uncrustify' to check C / C++ code style
+[0.358s] -- Configured uncrustify additional arguments: 
+[0.361s] -- Added test 'xmllint' to check XML markup files
+[0.363s] -- Configuring done
+[0.369s] -- Generating done
+[0.371s] -- Build files have been written to: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3
+[0.375s] Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3
+[0.377s] Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3 -- -j16 -l16
+[0.427s] Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3 -- -j16 -l16
+[0.440s] Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3
+[0.450s] -- Install configuration: ""
+[0.450s] -- Execute custom install script
+[0.451s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/launch/navigation2.launch.py
+[0.466s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/launch/robot_state_publisher.launch.py
+[0.479s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/launch/ros_ign_bridge.launch.py
+[0.495s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/launch/simulation.launch.py
+[0.508s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/mundo_tijolo/brick.png
+[0.524s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/mundo_tijolo/model.sdf
+[0.544s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/mundo_tijolo/mundo_irregular_tijolo.dae
+[0.557s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/mundo_tijolo/wood_wall.jpg
+[0.571s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/burger_base.dae
+[0.584s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/lds.dae
+[0.598s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/r200.dae
+[0.613s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/tire.dae
+[0.628s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_base.dae
+[0.642s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_pi_base.dae
+[0.654s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.config
+[0.668s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.sdf
+[0.683s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/worlds/meshes/hexagon.dae
+[0.699s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/worlds/meshes/wall.dae
+[0.712s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/worlds/model.sdf
+[0.724s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/models/worlds/world_only.sdf
+[0.739s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.pgm
+[0.752s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.yaml
+[0.767s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/params/oldwaffle.yaml
+[0.780s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/params/test_nav2_planners.py
+[0.794s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/params/waffle.yaml
+[0.808s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+[0.821s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+[0.834s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh
+[0.848s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.dsv
+[0.864s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/environment/path.sh
+[0.880s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/environment/path.dsv
+[0.894s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/local_setup.bash
+[0.908s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/local_setup.sh
+[0.922s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/local_setup.zsh
+[0.936s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/local_setup.dsv
+[0.952s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/package.dsv
+[0.965s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+[0.977s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config.cmake
+[0.991s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+[1.005s] -- Symlinking: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/install/turtlebot3/share/turtlebot3/package.xml
+[1.020s] Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/ProjetoFinal/turtlebot3_ws/turtlebot3/build/turtlebot3

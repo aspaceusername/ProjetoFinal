@@ -1,0 +1,4 @@
+[console_scripts]
+goal_state_listener.py = nav_goal_sender.goal_state_listener:main
+send_goal.py = nav_goal_sender.send_goal:main
+

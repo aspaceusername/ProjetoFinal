@@ -1,0 +1,6 @@
+[0.016s] Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3 -- -j16 -l16
+[0.024s] [0mCMake Error: The current CMakeCache.txt directory /home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3/CMakeCache.txt is different than the directory /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3 where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0.038s] [0mCMake Error: The source directory "/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/turtlebot3" does not exist.
+[0.039s] Specify --help for usage, or press the help button on the CMake GUI.[0m
+[0.040s] gmake: *** [Makefile:226: cmake_check_build_system] Error 1
+[0.044s] Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3 -- -j16 -l16

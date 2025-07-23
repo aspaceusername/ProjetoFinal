@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <world name="default">
+    <include>
+      <uri>file:///usr/share/gazebo-11/models/ground_plane/model.sdf</uri>
+    </include>
+    <include>
+      <uri>file:///usr/share/gazebo-11/models/sun/model.sdf</uri>
+    </include>
+    <include>
+      <uri>file:///home/ruben/Documents/ProjetoFinal/veiculo_terrestre/meshes/NOVO_ROBO/robo_camuflado.sdf</uri>
+      <name>robo_camuflado</name>
+    </include>
+  </world>
+</sdf>

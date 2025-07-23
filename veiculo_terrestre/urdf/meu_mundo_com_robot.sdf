@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+    <!-- Inclui o seu mapa -->
+    <include>
+      <uri>file:///home/ruben/Documents/Projeto Final/veiculo_terrestre/urdf/meu_mundo.sdf</uri>
+    </include>
+
+    <!-- Inclui o robô -->
+    <include>
+      <uri>file:///home/ruben/Documents/Projeto Final/veiculo_terrestre/urdf/veiculo_terrestre.sdf</uri>
+      <name>meu_robo</name>
+      <pose>0 0 0 0 0 0</pose> <!-- posição inicial -->
+    </include>
+  </world>
+</sdf>
+

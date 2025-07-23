@@ -1,0 +1,88 @@
+[0.014s] Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3
+[0.086s] -- The C compiler identification is GNU 11.4.0
+[0.169s] -- The CXX compiler identification is GNU 11.4.0
+[0.180s] -- Detecting C compiler ABI info
+[0.282s] -- Detecting C compiler ABI info - done
+[0.295s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.295s] -- Detecting C compile features
+[0.295s] -- Detecting C compile features - done
+[0.301s] -- Detecting CXX compiler ABI info
+[0.449s] -- Detecting CXX compiler ABI info - done
+[0.458s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.458s] -- Detecting CXX compile features
+[0.459s] -- Detecting CXX compile features - done
+[0.462s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.661s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.772s] -- Found ament_lint_auto: 0.12.12 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.883s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.883s] -- Configured cppcheck include dirs: 
+[0.883s] -- Configured cppcheck exclude dirs and/or files: 
+[0.886s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.892s] -- Added test 'lint_cmake' to check CMake code style
+[0.895s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.915s] -- Added test 'uncrustify' to check C / C++ code style
+[0.915s] -- Configured uncrustify additional arguments: 
+[0.918s] -- Added test 'xmllint' to check XML markup files
+[0.920s] -- Configuring done
+[0.924s] -- Generating done
+[0.927s] -- Build files have been written to: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3
+[0.935s] Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/turtlebot3 -DCMAKE_INSTALL_PREFIX=/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3
+[0.937s] Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3 -- -j16 -l16
+[0.993s] Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3 -- -j16 -l16
+[1.007s] Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3
+[1.016s] -- Install configuration: ""
+[1.016s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/launch
+[1.016s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/launch/robot_state_publisher.launch.py
+[1.016s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/launch/navigation2.launch.py
+[1.016s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/launch/simulation.launch.py
+[1.016s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/launch/ros_ign_bridge.launch.py
+[1.016s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models
+[1.016s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3
+[1.017s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.config
+[1.017s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes
+[1.017s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/burger_base.dae
+[1.017s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/tire.dae
+[1.017s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_pi_base.dae
+[1.017s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/lds.dae
+[1.017s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/waffle_base.dae
+[1.018s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/meshes/r200.dae
+[1.018s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/turtlebot3/model.sdf
+[1.018s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/worlds
+[1.018s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/worlds/meshes
+[1.018s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/worlds/meshes/wall.dae
+[1.019s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/worlds/meshes/hexagon.dae
+[1.019s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/worlds/world_only.sdf
+[1.019s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/worlds/model.sdf
+[1.019s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado
+[1.019s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/robo_camuflado.sdf
+[1.019s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes
+[1.019s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/wheel_bl.dae
+[1.020s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/base_link.dae
+[1.020s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/Grass.png
+[1.024s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/wheel_fl.dae
+[1.024s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/wheel_br.dae
+[1.024s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/cam_link.dae
+[1.024s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/wheel_fr.dae
+[1.025s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/meshes/lidar_link.dae
+[1.026s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/models/robo_camuflado/robo_camuflado.xacro
+[1.026s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/maps
+[1.026s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.yaml
+[1.026s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/maps/turtlebot3_world.pgm
+[1.026s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/params
+[1.026s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/params/waffle.yaml
+[1.027s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/ament_index/resource_index/package_run_dependencies/turtlebot3
+[1.027s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/ament_index/resource_index/parent_prefix_path/turtlebot3
+[1.028s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.sh
+[1.028s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/environment/ament_prefix_path.dsv
+[1.028s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/environment/path.sh
+[1.028s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/environment/path.dsv
+[1.028s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/local_setup.bash
+[1.028s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/local_setup.sh
+[1.029s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/local_setup.zsh
+[1.029s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/local_setup.dsv
+[1.029s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/package.dsv
+[1.029s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/ament_index/resource_index/packages/turtlebot3
+[1.030s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config.cmake
+[1.030s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/cmake/turtlebot3Config-version.cmake
+[1.030s] -- Installing: /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/install/turtlebot3/share/turtlebot3/package.xml
+[1.033s] Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/ProjetoFinal/turtlebot3_ws (copy)/build/turtlebot3

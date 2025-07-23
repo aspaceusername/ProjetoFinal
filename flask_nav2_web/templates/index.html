@@ -36,12 +36,30 @@
       flex-grow: 1;
     }
 
-    #mapa {
+    .map-wrapper {
+      position: relative;
       width: 800px;
+    }
+
+    #mapa {
+      width: 100%;
       cursor: pointer;
       border: 2px solid #444;
       border-radius: 8px;
       user-select: none;
+      display: block;
+    }
+
+    #robot-dot {
+      position: absolute;
+      width: 14px;
+      height: 14px;
+      background-color: red;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: left 0.3s ease, top 0.3s ease;
+      pointer-events: none;
+      z-index: 10;
     }
 
     .coords {
@@ -84,7 +102,10 @@
   <hr>
 
   <div class="container">
-    <img id="mapa" src="/static/mapa.png" alt="Mapa do Ambiente">
+    <div class="map-wrapper">
+      <img id="mapa" src="/static/mapa.png" alt="Mapa do Ambiente">
+      <div id="robot-dot"></div>
+    </div>
 
     <div class="coords">
       <div>
@@ -106,28 +127,35 @@
     const img = document.getElementById('mapa');
     const coordXInput = document.getElementById('coord-x');
     const coordYInput = document.getElementById('coord-y');
+    const robotDot = document.getElementById('robot-dot');
+
+    const mapWidth = 800;
+    const mapHeight = 800;
+
+    // Corner calibration from you
+    const realTopLeft = { x: -8.3285, y: 7.9614 };
+    const realBottomRight = { x: 7.6653, y: -8.3285 };
+
+    // Convert pixel (image coords) → real-world meters
+    function toWorldCoords(x_img, y_img) {
+      const real_x = realTopLeft.x + (x_img / mapWidth) * (realBottomRight.x - realTopLeft.x);
+      const real_y = realBottomRight.y + (1 - y_img / mapHeight) * (realTopLeft.y - realBottomRight.y);
+      return { real_x, real_y };
+    }
+
+    // Convert real-world meters → pixel (image coords)
+    function toPixelCoords(x, y) {
+      const px = ((x - realTopLeft.x) / (realBottomRight.x - realTopLeft.x)) * mapWidth;
+      const py = (1 - (y - realBottomRight.y) / (realTopLeft.y - realBottomRight.y)) * mapHeight;
+      return { px, py };
+    }
 
     img.addEventListener('click', async (e) => {
       const rect = img.getBoundingClientRect();
-
-      // Click coordinates relative to displayed image
       const x_img = e.clientX - rect.left;
       const y_img = e.clientY - rect.top;
 
-      // Center of displayed image
-      const center_x = img.width / 2;
-      const center_y = img.height / 2;
-
-      // Map resolution (meters per pixel)
-      const resolution = 0.05;
-
-      // Calculate offset from center
-      const dx = x_img - center_x;
-      const dy = center_y - y_img; // Y-axis flipped
-
-      // Convert to meters
-      const real_x = dx * resolution;
-      const real_y = dy * resolution;
+      const { real_x, real_y } = toWorldCoords(x_img, y_img);
 
       coordXInput.value = real_x.toFixed(3);
       coordYInput.value = real_y.toFixed(3);
@@ -141,7 +169,24 @@
       const data = await response.json();
       alert(`Destino enviado para (${data.x.toFixed(2)}, ${data.y.toFixed(2)})`);
     });
+
+    async function updateRobotDot() {
+      try {
+        const response = await fetch('/robot_pose');
+        const data = await response.json();
+        const { px, py } = toPixelCoords(data.x, data.y);
+
+        robotDot.style.left = `${px}px`;
+        robotDot.style.top = `${py}px`;
+      } catch (err) {
+        console.error('Erro ao buscar posição do robô:', err);
+      }
+    }
+
+    setInterval(updateRobotDot, 500);
+    updateRobotDot();
   </script>
+
 </body>
 
 </html>

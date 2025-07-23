@@ -1,0 +1,2 @@
+Invoking command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3 -- -j16 -l16
+Invoked command in '/home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/ProjetoFinal/turtlebot3_ws2/build/turtlebot3 -- -j16 -l16

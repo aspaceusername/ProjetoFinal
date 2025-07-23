@@ -1,0 +1,4 @@
+source;share/veiculo_terrestre/local_setup.bash
+source;share/veiculo_terrestre/local_setup.dsv
+source;share/veiculo_terrestre/local_setup.sh
+source;share/veiculo_terrestre/local_setup.zsh

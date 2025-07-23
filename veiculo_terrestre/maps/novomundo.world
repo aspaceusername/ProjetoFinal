@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="default">
+
+    <!-- Inserir o teu modelo -->
+    <include>
+      <name>terrain_1</name>
+      <uri>model:///home/ruben/Documents/Projeto Final/veiculo_terrestre/meshes/Corredor</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>

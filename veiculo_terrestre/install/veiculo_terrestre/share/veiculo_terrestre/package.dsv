@@ -1,0 +1,8 @@
+source;share/veiculo_terrestre/hook/cmake_prefix_path.ps1
+source;share/veiculo_terrestre/hook/cmake_prefix_path.dsv
+source;share/veiculo_terrestre/hook/cmake_prefix_path.sh
+source;share/veiculo_terrestre/local_setup.bash
+source;share/veiculo_terrestre/local_setup.dsv
+source;share/veiculo_terrestre/local_setup.ps1
+source;share/veiculo_terrestre/local_setup.sh
+source;share/veiculo_terrestre/local_setup.zsh

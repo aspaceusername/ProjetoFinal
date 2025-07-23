@@ -1,0 +1,25 @@
+[0.013s] Invoking command in '/home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre -- -j16 -l16
+[0.059s] Invoked command in '/home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre -- -j16 -l16
+[0.072s] Invoking command in '/home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre
+[0.080s] -- Install configuration: ""
+[0.080s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/urdf
+[0.080s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/urdf/veiculo.urdf
+[0.081s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/meshes
+[0.081s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/meshes/robo_stl.stl
+[0.081s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/meshes/robo.dae
+[0.081s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/ament_index/resource_index/package_run_dependencies/veiculo_terrestre
+[0.081s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/ament_index/resource_index/parent_prefix_path/veiculo_terrestre
+[0.081s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/environment/ament_prefix_path.sh
+[0.081s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/environment/ament_prefix_path.dsv
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/environment/path.sh
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/environment/path.dsv
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/local_setup.bash
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/local_setup.sh
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/local_setup.zsh
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/local_setup.dsv
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/package.dsv
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/ament_index/resource_index/packages/veiculo_terrestre
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/cmake/veiculo_terrestreConfig.cmake
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/cmake/veiculo_terrestreConfig-version.cmake
+[0.082s] -- Up-to-date: /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/install/veiculo_terrestre/share/veiculo_terrestre/package.xml
+[0.084s] Invoked command in '/home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ruben/Documents/Projeto Final/Veiculos/veiculo_terrestre/build/veiculo_terrestre

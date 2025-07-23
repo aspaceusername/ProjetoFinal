@@ -1,0 +1,22 @@
+[1.580s] Invoking command in '/home/ruben/flask_nav2_web/nav_goal_sender': PYTHONPATH=/home/ruben/flask_nav2_web/build/nav_goal_sender/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ruben/flask_nav2_web/install/nav_goal_sender/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/nav_goal_sender build --build-base /home/ruben/flask_nav2_web/build/nav_goal_sender/build install --record /home/ruben/flask_nav2_web/build/nav_goal_sender/install.log --single-version-externally-managed install_data
+[2.206s] running egg_info
+[2.208s] writing ../build/nav_goal_sender/nav_goal_sender.egg-info/PKG-INFO
+[2.209s] writing dependency_links to ../build/nav_goal_sender/nav_goal_sender.egg-info/dependency_links.txt
+[2.209s] writing entry points to ../build/nav_goal_sender/nav_goal_sender.egg-info/entry_points.txt
+[2.209s] writing requirements to ../build/nav_goal_sender/nav_goal_sender.egg-info/requires.txt
+[2.209s] writing top-level names to ../build/nav_goal_sender/nav_goal_sender.egg-info/top_level.txt
+[2.214s] reading manifest file '../build/nav_goal_sender/nav_goal_sender.egg-info/SOURCES.txt'
+[2.216s] writing manifest file '../build/nav_goal_sender/nav_goal_sender.egg-info/SOURCES.txt'
+[2.216s] running build
+[2.216s] running build_py
+[2.216s] running install
+[2.217s] running install_lib
+[2.221s] running install_data
+[2.221s] running install_egg_info
+[2.226s] removing '/home/ruben/flask_nav2_web/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender-0.0.0-py3.10.egg-info' (and everything under it)
+[2.227s] Copying ../build/nav_goal_sender/nav_goal_sender.egg-info to /home/ruben/flask_nav2_web/install/nav_goal_sender/lib/python3.10/site-packages/nav_goal_sender-0.0.0-py3.10.egg-info
+[2.229s] running install_scripts
+[2.280s] Installing goal_state_listener.py script to /home/ruben/flask_nav2_web/install/nav_goal_sender/lib/nav_goal_sender
+[2.281s] Installing send_goal.py script to /home/ruben/flask_nav2_web/install/nav_goal_sender/lib/nav_goal_sender
+[2.281s] writing list of installed files to '/home/ruben/flask_nav2_web/build/nav_goal_sender/install.log'
+[2.402s] Invoked command in '/home/ruben/flask_nav2_web/nav_goal_sender' returned '0': PYTHONPATH=/home/ruben/flask_nav2_web/build/nav_goal_sender/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ruben/flask_nav2_web/install/nav_goal_sender/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../build/nav_goal_sender build --build-base /home/ruben/flask_nav2_web/build/nav_goal_sender/build install --record /home/ruben/flask_nav2_web/build/nav_goal_sender/install.log --single-version-externally-managed install_data
